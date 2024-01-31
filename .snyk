@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - tap > tap-mocha-reporter > debug:
+        patched: '2024-01-31T20:09:11.958Z'
+        id: 'npm:debug:20170905'
+        path: tap > tap-mocha-reporter > debug
+  SNYK-JS-LODASH-567746:
+    - tap > nyc > istanbul-reports > handlebars > async > lodash:
+        patched: '2024-01-31T20:09:11.958Z'
+        id: SNYK-JS-LODASH-567746
+        path: tap > nyc > istanbul-reports > handlebars > async > lodash
+  'npm:ms:20170412':
+    - tap > tap-mocha-reporter > debug > ms:
+        patched: '2024-01-31T20:09:11.958Z'
+        id: 'npm:ms:20170412'
+        path: tap > tap-mocha-reporter > debug > ms
